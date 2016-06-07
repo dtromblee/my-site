@@ -1,0 +1,18 @@
+<div class="row container-productdetails">
+    <div class="col-md-12 clear-thirty">
+        <a class="font-thirty" href="#/products">Back</a>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12">
+        <img class="hundred" ng-src="assets/img/product-details/{{productDetails.img[0]}}" />
+    </div>
+    
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="font-fourtyfive">{{productDetails.name}}</div>
+        <div class="font-thirty">${{productDetails.price}}</div>
+        <div class="font-twenty">{{productDetails.description}}</div>
+        <div class="font-twenty">Category: {{productDetails.category}}</div>
+        <div>
+            <span ng-show="productDetails.tags.length > 0">| </span><span ng-repeat="tag in productDetails.tags">{{tag}} | </span>
+        </div>
+    </div>
+</div>

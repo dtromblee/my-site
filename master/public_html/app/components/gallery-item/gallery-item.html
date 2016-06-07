@@ -1,0 +1,17 @@
+<div class="col-md-12 clear-thirty container-galleryitem">
+    <div class="col-md-6">
+        <a ng-href="#/product/{{item.product_id}}">
+            <img pre-loading class="hundred" ng-src="assets/img/{{item.img[0]}}" />
+        </a>
+    </div>
+    <div class="col-md-6">
+        <a ng-href="#/products/{{item.product_id}}">
+            <div class="font-thirty">{{item.name}}</div>
+        </a>
+        <div><strong>{{ item.description | limitTo:25 }}..</strong></div>
+    </div>
+</div>
+
+<div class="col-md-12">
+    <span ng-show="item.tags.length > 0">| </span><span ng-repeat="tag in item.tags">{{tag}} | </span>
+</div>

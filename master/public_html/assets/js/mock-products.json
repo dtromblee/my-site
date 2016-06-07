@@ -1,0 +1,68 @@
+{
+    "categories": {
+        "Bracelet": 1,
+        "Necklace": 1,
+        "Ring": 1
+    },
+    "tags": {
+        "gold": 1,
+        "silver": 1
+    },
+    "products": [{
+        "product_id": "4",
+        "name": "Assorted Bracelets",
+        "description": "An Assortment of braided and non-braided bracelets. Laced with gemstone beads.",
+        "price": "45.00",
+        "category": "Bracelet",
+        "tags": [],
+        "img": ["img4.jpg"]
+    }, {
+        "product_id": "5",
+        "name": "Copper Braclet",
+        "description": "This Copper Bracelet is the essential easy-wear accessory.",
+        "price": "30.00",
+        "category": "Bracelet",
+        "tags": [],
+        "img": ["img5.jpg"]
+    }, {
+        "product_id": "2",
+        "name": "Druzy Necklaces",
+        "description": "Assorted Druzy Necklaces",
+        "price": "65.00",
+        "category": "Necklace",
+        "tags": [],
+        "img": ["img2.jpg"]
+    }, {
+        "product_id": "6",
+        "name": "Lavenderite Necklace",
+        "description": "Beautiful Lavenderite Necklace.",
+        "price": "85.00",
+        "category": "Necklace",
+        "tags": [],
+        "img": ["img6.jpg"]
+    }, {
+        "product_id": "7",
+        "name": "Double Necklace",
+        "description": "The art of wearing two necklaces without them ever seeming to tangle",
+        "price": "105.00",
+        "category": "Necklace",
+        "tags": ["silver"],
+        "img": ["img7.jpg"]
+    }, {
+        "product_id": "1",
+        "name": "Sample Ring",
+        "description": "This is a sample ring",
+        "price": "100.00",
+        "category": "Ring",
+        "tags": ["gold", "silver"],
+        "img": ["img1.jpg"]
+    }, {
+        "product_id": "3",
+        "name": "Assorted Rings",
+        "description": "An assortment of Rings",
+        "price": "20.00",
+        "category": "Ring",
+        "tags": ["gold"],
+        "img": ["img3.jpg"]
+    }]
+}
