@@ -1,4 +1,0 @@
-RewriteEngine on
-#RewriteRule "!\." "-" [H=application/x-httpd-php]
-#RewriteRule "^amys_store/rest/(.*)$" "resources/app/main\.php/$1"
-RewriteRule "^/$" "hello-world\.php"
