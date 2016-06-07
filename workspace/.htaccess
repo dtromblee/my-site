@@ -1,0 +1,11 @@
+RewriteEngine on
+Options FollowSymLinks
+
+RewriteBase /
+RewriteRule ^rest/(.*)$ /main\.php/$1
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+#RedirectMatch ^/$ /public_html/
+
+RewriteRule ^/(.*)$ /public_html/$1

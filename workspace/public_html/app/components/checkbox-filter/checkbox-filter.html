@@ -1,0 +1,3 @@
+<div ng-repeat="(name, count) in values">
+    <div ng-class="{'filter-list-selected' : filteredValues.indexOf(name) > -1}" class="filter-list" ng-click="addToFilterList(name)">{{name}} ({{count}})</div>
+</div>
