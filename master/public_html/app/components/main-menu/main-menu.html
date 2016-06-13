@@ -1,0 +1,7 @@
+<div class="clear-thirtyfive col-md-12">
+        <a ng-class="menuItemSelected == $index ? 'link-menu-selected' : ''" 
+            class="link-menu col-md-12" 
+            ng-repeat="item in menuItems" 
+            ng-href="#{{item.path}}"
+            ng-click="selectMenuItem($index);">{{item.label}}</a>
+</div>
