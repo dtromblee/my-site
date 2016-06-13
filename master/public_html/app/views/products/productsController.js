@@ -15,7 +15,7 @@ angular.module('mySite')
 
         
         $scope.filterTags = function(product) {
-            if($scope.tagFilters.length == 0)
+            if($scope.tagFilters.length === 0)
                 return product;
             
             var hasTag = false;
@@ -27,7 +27,7 @@ angular.module('mySite')
         };
         
         $scope.filterCategories = function(product) {
-            if($scope.categoryFilters.length == 0)
+            if($scope.categoryFilters.length === 0)
                 return product;
             
             var hasCategory = false;

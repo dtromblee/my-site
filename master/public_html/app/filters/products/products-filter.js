@@ -1,12 +1,12 @@
 /*global angular*/
-'use strict';
+/*global $*/
 
 angular.module('mySite')
     .filter('productTagsFilter', function() {
         return function (products, tags) {
             tags = (tags != 'undefined' && Array.isArray(tags)) ? tags : [];
             
-            if(tags.length == 0)
+            if(tags.length === 0)
                 return products;
             
             var filtered = [];

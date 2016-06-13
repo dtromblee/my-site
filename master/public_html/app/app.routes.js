@@ -35,6 +35,11 @@ angular.module('mySite')
                 templateUrl: compPath + 'contact-us/contact-us.html',
                 controller: 'ContactUsCtrl'
             })
+            .when('/projects', {
+                title: titleBase + 'Projects',
+                templateUrl: compPath + 'projects/projects.html',
+                controller: 'ProjectsCtrl'
+            })
             .otherwise({
                 title: titleBase + 'Home',
                 templateUrl: compPath + 'home/home.html',

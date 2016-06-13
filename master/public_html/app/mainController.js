@@ -4,5 +4,5 @@ angular.module('mySite')
         $scope.view = function() {
             //angular gods, please forgive me
             angular.element(document.getElementById('view-master')).removeClass('hidden');
-        }
+        };
     }]);

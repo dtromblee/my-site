@@ -1,5 +1,4 @@
 /*global angular*/
-'use strict';
 
 angular.module('mySite')
     .directive('mainMenu', ['$location', function($location) {
@@ -14,8 +13,8 @@ angular.module('mySite')
                 
                 $scope.selectMenuItem = function(index) {
                     $scope.menuItemSelected = index;
-                }
-                $scope.menuItemSelected;
+                };
+                $scope.menuItemSelected = undefined;
                 
             }]
         };

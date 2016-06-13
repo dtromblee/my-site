@@ -11,28 +11,27 @@
     </head>
     
     <body ng-controller="MainCtrl">
-        <img id="img-background" src="/assets/img/background-site.jpg">
+        <!-- <img id="img-background" src="/assets/img/background-main.jpg"> -->
         <!-- angular pre-bootstrap display -->
         <div class="loading" ng-if="false">Loading&#8230;</div>
         
-        <div id="view-master" class="hidden eighty center" ng-init="view()">
-            <div class="row">
-                <img class="logo-main col-md-3 col-sm-3 col-xs-12" src="/assets/img/amyldesign_cover.jpg" />
-            </div>
-            <div class="row menu-buffer col-md-12">
-                <header></header>
-                <div class="col-md-12">
-                    <!-- <breadcrumb></breadcrumb> -->
+        <div id="view-master" class="hidden col-md-12" ng-init="view()">
+            <div class="row col-md-12">
+                <div class="col-md-2">
+                    <div class="header col-md-12">
+                        <h1>Dav's Space</h1>
+                    </div>
+                    <main-menu></main-menu>
                 </div>
-            </div>
-            <div id="view" class="row">
-                <ng-view></ng-view>
+                <div id="view" class="col-md-10">
+                    <ng-view></ng-view>
+                </div>
             </div>
         </div>
     
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-route.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular-resource.js"></script>
+        <script src="/assets/libs/angular-1.5.6/angular.js"></script>
+        <script src="/assets/libs/angular-1.5.6/angular-route.js"></script>
+        <script src="/assets/libs/angular-1.5.6/angular-resource.js"></script>
         <script src="/app/app.module.js"></script>
         <script src="/app/app.routes.js"></script>
         <script src="/app/app.resources.js"></script>
@@ -42,8 +41,10 @@
         <script src="/app/views/contact-us/contactUsController.js"></script>
         <script src="/app/views/products/productsController.js"></script>
         <script src="/app/views/product-details/productDetailsController.js"></script>
+        <script src="/app/views/projects/projectsController.js"></script>
         <script src="/app/components/gallery-item/gallery-item.js"></script>
-        <script src="/app/components/header/header.js"></script>
+        <script src="/app/components/main-menu/main-menu.js"></script>
+        <script src="/app/components/page-header/page-header.js"></script>
         <script src="/app/components/checkbox-filter/checkbox-filter.js"></script>
         <script src="/app/components/breadcrumb/breadcrumb.js"></script>
         <script src="/app/services/products/products-service.js"></script>

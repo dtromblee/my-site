@@ -1,5 +1,10 @@
 body {
-  width: 100vw;
+    background-color: gray !important;
+}
+
+body>* {
+  color: white !important;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 p {
@@ -7,7 +12,7 @@ p {
 }
 
 #img-background {
-   /* Set rules to fill background */
+  /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
 	
@@ -23,19 +28,20 @@ p {
   
   z-index: -1;
 }
-
+#view-master {
+  margin-top:10px;
+}
 #view {
-  color: 	#F5FFFA;
+  /*color: 	#F5FFFA;*/
 }
 
 #view a{
-  color: white;
+/*  color: white;*/
   text-decoration: none;
   transition:all linear 0.2s;
 }
 
 #view a:hover {
-  color: pink;
   text-decoration: none;
 }
 
@@ -60,7 +66,7 @@ p {
 }
 
 .filter-list {
-  color: white;
+  /*color: white;*/
   padding-left: 5px;
   padding-right: 5px;
   display: inline-block;
@@ -70,7 +76,7 @@ p {
 
 .filter-list-selected, .filter-list:hover {
   font-weight: bold;
-  color: pink;
+  color: gray;
 }
 
 .font-fourtyfive {
@@ -85,6 +91,11 @@ p {
   font-size: 20px;
 }
 
+.header {
+  padding-bottom: 20px;
+  text-align: right;
+}
+
 .hidden {
   display: none;
 }
@@ -96,21 +107,22 @@ p {
 .link-menu {
   font-size: 2em;
   font-weight: bold;
-  color: #F5FFFA;
+  color: white;
   /*margin-right: 20px;*/
   transition:all linear 0.2s;
   background: transparent;
   text-decoration: none;
+  text-align: right;
 }
 
-.link-menu:hover {
-  color: pink;
+.link-menu:hover, .link-menu:focus {
+  color: black;
   text-decoration: none;
 }
 
 
 .link-menu-selected {
-  color: pink !important;
+  color: black !important;
   text-decoration: underline !important;
 }
 

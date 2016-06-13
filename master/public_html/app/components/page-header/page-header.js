@@ -1,5 +1,4 @@
 /*global angular*/
-'use strict';
 
 angular.module('mySite')
     .directive('pageHeader', [function() {

@@ -7,5 +7,5 @@ angular.module('mySite')
                 item : '=item'
             },
             templateUrl : 'app/components/gallery-item/gallery-item.html'
-        }
+        };
     }]);

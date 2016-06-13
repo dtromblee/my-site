@@ -10,6 +10,7 @@ angular.module('mySite')
                 {
                     'title' : 'About',
                     'route' : '/about'
+                },
                 {
                     'title' : 'Products',
                     'route' : '/products'
@@ -23,5 +24,5 @@ angular.module('mySite')
                     'route' : '/projects'
                 }
             ]
-        }
+        };
     });

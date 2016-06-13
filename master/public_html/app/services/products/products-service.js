@@ -1,5 +1,4 @@
 /*global angular*/
-'use strict';
 
 angular.module('mySite')
     .factory('productsService', ['$resource', function($resource) {

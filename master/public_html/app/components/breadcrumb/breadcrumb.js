@@ -1,5 +1,5 @@
 /*global angular*/
-'use strict';
+/*global console*/
 
 angular.module('mySite')
     .directive('breadcrumb', ['$location', function($location) {
@@ -18,14 +18,14 @@ angular.module('mySite')
                     
                     for(var i=0; i<pathParts.length; i++) {
                         trail[i] = {};
-                        trail[i]['part'] = pathParts[i];
+                        trail[i].part = pathParts[i];
                         
                         var hRef = '#';
                         for(var j=0; j<i+1; j++) {
                             hRef += '/' + pathParts[j];
                         }
                         
-                        trail[i]['href'] = hRef;
+                        trail[i].href = hRef;
                     }
                     
                     console.log(trail);
